@@ -4,40 +4,66 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>As Casas de Hogwarts</title>
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
+    <title>Hogwarts</title>
+
+    <!-- Icone da Barra -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
 </head>
 
 <body>
-    <div class="header-e-hogwarts-fundo">
+    <div class="header-e-hogwarts-fundo" id="inicio">
         <header class="cabecalho">
+            <button class="menu-hamburguer" aria-label="Abrir menu">
+                &#9776;
+            </button>
             <nav class="cabecalho-menu">
-                <a class="cabecalho-menu-item">Início</a>
-                <a class="cabecalho-menu-item">Sobre Hogwarts</a>
-                <a class="cabecalho-menu-item">As Casas</a>
-                <a class="cabecalho-menu-item">Sobre este projeto</a>
+                <a class="cabecalho-menu-item" href="#inicio">Início</a>
+                <a class="cabecalho-menu-item" href="#hogwarts">Sobre Hogwarts</a>
+                <div class="cabecalho-menu-item casas-dropdown">
+                    <span class="dropdown-toggle">As Casas</span>
+                    <ul class="submenu">
+                        <li><a href="#grifinoria">Grifinória</a></li>
+                        <li><a href="#sonserina">Sonserina</a></li>
+                        <li><a href="#corvinal">Corvinal</a></li>
+                        <li><a href="#lufa-lufa">Lufa-Lufa</a></li>
+                    </ul>
+                </div>
+                <a class="cabecalho-menu-item" href="#projeto">Sobre este projeto</a>
             </nav>
         </header>
 
-        <section class="conteudo-hogwarts">
-            <img class="conteudo-hogwarts-imagem" src="./images/Logo.Hogwarts.png" alt="Logo de Hogwarts" />
+        <section class="conteudo-hogwarts" id="hogwarts">
+            <img class="conteudo-hogwarts-imagem" src="./assets/images/Logo.Hogwarts.png" alt="Logo de Hogwarts" />
 
             <div class="conteudo-hogwarts-textos">
                 <h1 class="conteudo-hogwarts-titulo">Sobre Hogwarts</h1>
-                <h2 class="conteudo-hogwarts-texto">
+                <p>
                     Hogwarts é uma escola de magia e bruxaria localizada na Escócia.
                     Fundada há mais de mil anos por quatro grandes bruxos, ela acolhe
                     jovens bruxos de todo o Reino Unido para estudar magia, poções,
-                    feitiços e muito mais.
-                </h2>
+                    feitiços e muito mais.</p>
+                <p>O Castelo de Hogwarts está próximo da vila de Hogsmeade. Os Muggles (Trouxas, na tradução brasileira)
+                    não conseguem nem ver, nem localizar a escola uma vez que esta possui imensos feitiços e
+                    encantamentos de proteção, sendo que os Muggles apenas veem ruínas e sinais de aviso para se
+                    afastarem.
+                <p>O castelo possui longos terrenos cobertos de relva, um campo de Quidditch (Quadribol), um lago
+                    chamado de O Lago Negro, uma grande e densa floresta chamada de Floresta Proibida, entre outras
+                    construções. O castelo possui também a Torre das Corujas (ou Corujal) que abriga todas as corujas da
+                    escola e dos alunos. Existem 142 escadarias no castelo de Hogwarts</p>
+                <p>Em Hogwarts não existe eletricidade nem dispositivos eletrónicos à exceção de rádios, que não são
+                    alimentados por eletricidade, mas por magia. Além disso, a imensa quantidade de magia presente em
+                    Hogwarts faz com que todos os aparelhos elétricos parem de funcionar.</p>
             </div>
         </section>
     </div>
     <main class="conteudo">
-        <section class="house-section Grifinória layout-esquerda">
-            <img class="house-logo" src="./images/Gryffindor.png" alt="Grifinória" />
+        <section class="house-section Grifinória layout-esquerda" id="grifinoria">
+            <img class="house-logo" src="./assets/images/Gryffindor.png" alt="Grifinória" />
             <div class="house-content">
                 <h1>Grifinóriar</h1>
                 <p>
@@ -50,7 +76,7 @@
                     coragem, paixão e energia, enquanto o dourado representa nobreza,
                     glória e o brilho da bravura. Juntas, refletem o espírito valente e
                     heroico dos alunos dessa casa.
-                </p>
+                </p><br>
                 <li><strong>Valoriza:</strong> Coragem, bravura, determinação</li>
                 <li><strong>Fundador:</strong> Godric Gryffindor</li>
                 <li><strong>Mascote:</strong> Leão</li>
@@ -58,8 +84,8 @@
             </div>
         </section>
 
-        <section class="house-section Sonserina layout-direita">
-            <img class="house-logo" src="./images/Slytherin.png" alt="Sonserina" />
+        <section class="house-section Sonserina layout-direita" id="sonserina">
+            <img class="house-logo" src="./assets/images/Slytherin.png" alt="Sonserina" />
             <div class="house-content">
                 <h1>Sonserina</h1>
                 <p>
@@ -72,7 +98,7 @@
                     ambição, crescimento e renovação, enquanto o prateado simboliza
                     inteligência, astúcia e elegância. Essas cores ressaltam a natureza
                     estratégica e determinada dos alunos sonserinos.
-                </p>
+                </p><br>
                 <li><strong>Valoriza:</strong> Ambição, astúcia, liderança</li>
                 <li><strong>Fundador:</strong> Salazar Slytherin</li>
                 <li><strong>Mascote:</strong> Serpente</li>
@@ -80,8 +106,8 @@
             </div>
         </section>
 
-        <section class="house-section Corvinal layout-esquerda">
-            <img class="house-logo" src="./images/Ravenclaw.png" alt="Corvinal" />
+        <section class="house-section Corvinal layout-esquerda" id="corvinal">
+            <img class="house-logo" src="./assets/images/Ravenclaw.png" alt="Corvinal" />
             <div class="house-content">
                 <h1>Corvinal</h1>
                 <p>
@@ -95,7 +121,7 @@
                     calma e intelecto, enquanto o bronze representa força e resistência.
                     Essa combinação destaca a busca pelo conhecimento e o pensamento
                     crítico dos membros dessa casa.
-                </p>
+                </p><br>
                 <li><strong>Valoriza:</strong> Sabedoria, criatividade, inteligência</li>
                 <li><strong>Fundadora:</strong> Rowena Ravenclaw</li>
                 <li><strong>Mascote:</strong> Águia</li>
@@ -103,8 +129,8 @@
             </div>
         </section>
 
-        <section class="house-section Lufa-Lufa layout-direita">
-            <img class="house-logo" src="./images/Hufflepuff_ClearBG.png" alt="Lufa-Lufa" />
+        <section class="house-section Lufa-Lufa layout-direita" id="lufa-lufa">
+            <img class="house-logo" src="./assets/images/Hufflepuff_ClearBG.png" alt="Lufa-Lufa" />
             <div class="house-content">
                 <h1>Lufa-Lufa</h1>
                 <p>
@@ -117,7 +143,7 @@
                     lealdade, alegria e energia positiva, enquanto o preto simboliza a
                     força, a justiça e a estabilidade. Essas cores mostram o caráter
                     dedicado, justo e amigável dos alunos lufanos.
-                </p>
+                </p><br>
                 <li><strong>Valoriza:</strong> Lealdade, justiça, paciência</li>
                 <li><strong>Fundadora:</strong> Helga Hufflepuff</li>
                 <li><strong>Mascote:</strong> Texugo</li>
@@ -125,26 +151,34 @@
             </div>
         </section>
 
-        <section class="sobre-projeto">
+        <section class="sobre-projeto" id="projeto">
             <div class="conteudo">
                 <div class="texto">
                     <h1>SOBRE ESTE PROJETO</h1>
+                    <p>Este site foi desenvolvido como um projeto de estudo e prática, inspirado no universo mágico de
+                        Harry Potter. Criado por uma mente curiosa e criativa da Corvinal, o objetivo é explorar HTML,
+                        CSS e JavaScript enquanto mergulha na atmosfera encantadora de Hogwarts e suas casas.
+                    </p>
+                    <p>A criadora do projeto tem como patrono um <strong>gato Tonquinês</strong>, símbolo de intuição,
+                        elegância e sensibilidade mágica. Esta criatura mística também reflete o cuidado e a atenção aos
+                        detalhes.</p>
+                    <br>
                     <p>
-                        Este site foi desenvolvido como um projeto de estudo e prática,
-                        inspirado no universo mágico de Harry Potter. Criado por uma
-                        mente curiosa e criativa da Corvinal, o objetivo é explorar HTML,
-                        CSS e JavaScript enquanto mergulha na atmosfera encantadora de
-                        Hogwarts e suas casas.
+                        A proposta vai além do código: é uma homenagem ao mundo bruxo, às quatro casas de Hogwarts e à
+                        magia que nos inspira a aprender mais a cada feitiço (ou linha de código).
                     </p>
                 </div>
-                <div class="imagem " >
-                    <img src="./images/wizarding-world-portrait.png" alt="Imagem de personagem em Corvinal" />
+                <div class="imagem ">
+                    <img src="./assets/images/wizarding-world-portrait.png" alt="Imagem de personagem em Corvinal" />
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer></footer>
+
+    <script defer src="./assets/Scripts/scripts.js"></script>
 </body>
 
 </html>
